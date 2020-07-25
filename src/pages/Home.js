@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Hero from "../components/Hero/index";
 import Banner from "../components/Banner/index";
+import Services from '../components/Services/index'
 
 export default function Home() {
   return (
-    <div>
+    <React.Fragment>
       <Hero hero="defaultHero">
         <Banner
           title="luxurious rooms"
@@ -14,6 +15,7 @@ export default function Home() {
           <Link className="btn-primary" to="/rooms">Our Rooms</Link>
         </Banner>
       </Hero>
-    </div>
+      <Services/>
+    </React.Fragment>
   );
 }
